@@ -1,4 +1,196 @@
-.socialNetworks {
-  width: 50px;
-  height: 50px;
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v29-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff2");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+/* Header */
+header {
+  background-color: black;
+  color: #d9d9d9;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  & h1 {
+    font-size: 20px;
+  }
+}
+
+.navMenu {
+  & ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  & li {
+    color: #d9d9d9;
+    border-left: 1px solid;
+    padding-left: 10px;
+    margin-left: 40px;
+  }
+  & a {
+    text-decoration: none;
+    color: #d9d9d9;
+    &:hover {
+      color: #007bff;
+    }
+  }
+}
+
+/* About Me */
+.aboutMe {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #d9d9d9;
+}
+
+.aboutMe h2 {
+  margin: 0;
+  width: 100px;
+  padding-right: 20px;
+}
+
+.aboutMePhoto {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.aboutMe p {
+  margin: 0;
+}
+
+/* My Competencies */
+.myCompetencies {
+  padding: 20px;
+  color: #d9d9d9;
+  background-color: black;
+  & h2 {
+    width: 250px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding-bottom: 20px;
+  }
+}
+.competenciesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & figcaption {
+    width: 150px;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+  }
+  & img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+}
+
+/* Services */
+.services {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #d9d9d9;
+  & h2 {
+    margin: 0;
+    width: 100px;
+    padding-right: 20px;
+  }
+  & p {
+    margin: 0;
+  }
+}
+
+.servicesList {
+  display: flex;
+  justify-content: space-between;
+  & ul {
+    width: 50%;
+  }
+  & li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Portfolio */
+.portfolio {
+  padding: 20px;
+  color: #d9d9d9;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & h2 {
+    width: 250px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding-bottom: 20px;
+  }
+  & p {
+    margin: 0;
+  }
+  & button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d9d9d9;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    &:hover {
+      background-color: #007bff;
+    }
+  }
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: #d9d9d9;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & a {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+  }
+  & div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  & img {
+    width: 50px;
+    height: 50px;
+  }
+  & p {
+    margin: 0;
+    text-align: center;
+  }
 }

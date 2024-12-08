@@ -7,35 +7,92 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
-        </li>
-        <li><a href="index.html">Обо мне</a></li>
-        <li><a href="summary.html">Резюме</a></li>
-        <li><a href="portfolio.html">Портфолио</a></li>
-        <li><a href="#competencies">Компетенции</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-    </nav>
     <header>
-      <h1>Персональный сайт Полины Пожидаевой | Веб-технологии</h1>
+      <div class="headerContainer">
+        <h1>Персональный сайт Полины Пожидаевой | Веб-технологии</h1>
+        <nav class="navMenu">
+          <ul>
+            <li><a href="index.html">Обо мне</a></li>
+            <li><a href="summary.html">Резюме</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="#competencies">Компетенции</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
-        Nulla facilisi. Donec vel turpis vel neque consectetur convallis. Nulla
-        facilisi. Donec vel turpis vel neque consectetur convallis. Nulla
-        facilisi. Donec vel turpis vel neque consectetur convallis.
-      </p>
+      <section class="aboutMe">
+        <h2>Обо мне</h2>
+        <img
+          src="images/me.jpg"
+          alt="Фотография Полины Пожидаевой"
+          class="aboutMePhoto"
+        />
+        <p>
+          Привет, меня зовут Полина Пожидаева. Студент второго курса
+          университета Дубна, очень люблю ходить на все пары, и делать все
+          задания в срок
+        </p>
+      </section>
+      <section class="myCompetencies">
+        <h2>Мои компетенции</h2>
+        <div class="competenciesContainer">
+          <figure>
+            <img src="./images/company/mcOffice.png" alt="Company Logo 1" />
+            <figcaption>Microsoft Office</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/company/python.png" alt="Company Logo 2" />
+            <figcaption>Python</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/company/figma.png" alt="Company Logo 3" />
+            <figcaption>Figma</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/company/tilda.png" alt="Company Logo 4" />
+            <figcaption>Tilda</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/company/html.png" alt="Company Logo 5" />
+            <figcaption>HTML</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="services">
+        <h2>Услуги</h2>
+        <div class="servicesList">
+          <ul>
+            <li>Дизайн сайта</li>
+            <li>Дизайн постов для соц сетей</li>
+            <li>Небольшие проекты на Python</li>
+            <li>Создание сайта с помощью Tilda</li>
+          </ul>
+          <ul>
+            <li>Верстка сайтов HTML и CSS</li>
+            <li>Создание Word документов</li>
+            <li>Создание Excel таблиц</li>
+          </ul>
+        </div>
+      </section>
+      <section class="portfolio">
+        <h2>Портфолио</h2>
+        <p>
+          Привет, меня зовут Полина, мне 21 год. Я родилась и 15 лет прожила в
+          городе Омске. Я занималась пять лет тайским боксом, два года
+          гимнастикой, закончила музыкальную школу, играла на гитаре и как-то
+          случайно поступила в университет Дубна.
+        </p>
+        <button href="portfolio.html" class="portfolioButton">Портфолио</button>
+      </section>
     </main>
 
     <footer>
       <div>
-        <a href="#"><img src="images/vk.png" class="socialNetworks" /></a>
-        <a href="#"><img src="images/tg.png" class="socialNetworks" /></a>
-        <a href="#"><img src="images/github.png" class="socialNetworks" /></a>
+        <a href="#"><img src="images/socialNetworks/vk.png" /></a>
+        <a href="#"><img src="images/socialNetworks/tg.png" /></a>
+        <a href="#"><img src="images/socialNetworks/github.png" /></a>
       </div>
       <p>Сайт разработан Пожидаевой Полиной. Все права защищены © 2023</p>
     </footer>
